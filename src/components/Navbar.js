@@ -23,7 +23,7 @@ class Navbar extends Component {
     return (
       <div>
         {
-          window.innerWidth > 700
+          this.state.windowWidth < 700
             ?
             <Menu isOpen={this.state.open}>
               {/* customBurgerIcon={ <img src="img/icon.svg" /> } */}

@@ -1,3 +1,7 @@
+:root {
+  --primary-blue: *0095DB;
+}
+
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
@@ -52,23 +56,68 @@
   background: rgba(0, 0, 0, 0.3);
 }
 
-.landing-image {
-  height: 92vh;
-  min-width: 100vw;
-  height: auto;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-/* .landing-image {
-  min-height: 500px; 
-  background-attachment: fixed;
+.primary-content-background {
+  min-height: 150vh;
+  /* background-image: url('stuff'); */
+  background-attachment: center;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: red;
   background-size: cover;
-} */
+  text-align: center;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-container {
+  width: 85%;
+  height: 25%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.skills-container {
+  width: 85%;
+  height: 25%;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills-icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 60%;
+  height: 100px;
+}
+.skills-icons {
+  height: 70px;
+  max-width: 25%;
+}
+.portfolio-container {
+  width: 85%;
+  height: 25%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.contact-container {
+  width: 85vw;
+  height: 50vh;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 
 

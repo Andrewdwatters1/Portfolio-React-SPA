@@ -2,21 +2,19 @@ import React, { Component } from 'react';
 
 import './App.css';
 import Navbar from './components/Navbar';
-import About from './components/About';
-import Portfolio from './components/Portfolio';
-import Skills from './components/Skills';
+import LandingImageTop from './components/LandingImageTop';
+import LandingImageBottom from './components/LandingImageBottom';
 import Contact from './components/Contact';
-import LandingImage from './components/LandingImage';
+import PrimaryContent from './components/PrimaryContent';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Navbar/>
-        <LandingImage/>
-        <About/>
-        <Portfolio/>
-        <Skills/>
+        <LandingImageTop/>
+        <PrimaryContent/>
+        <LandingImageBottom/>
         <Contact/>
       </div>
     );

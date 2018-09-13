@@ -9,8 +9,10 @@ class Contact extends Component {
   }
   render() {
     return (
-      <div>
-        Contact Section
+      <div className="contact-container">
+        <div>
+          Contact
+          </div>
       </div>
     )
   }
