@@ -7,8 +7,8 @@ function PrimaryContent() {
   return (
     <div class="primary-content-background">
       <About/>
-      <Skills/>
       <Portfolio/>
+      <Skills/>
     </div>
   )
 }

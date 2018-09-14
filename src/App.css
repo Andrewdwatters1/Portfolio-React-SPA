@@ -1,5 +1,6 @@
 :root {
-  --primary-blue: *0095DB;
+  --light-blue: #0095DB;
+  --blue-green-blue: linear-gradient(#00D1FF, #OOE4FF, #00D1FF)
 }
 
 /* Position and sizing of burger button */
@@ -41,14 +42,13 @@
  
 /* Wrapper for item list */
 .bm-item-list {
-  color: #b8b7ad;
+  color: var(--light-blue);
   padding: 0.8em;
 }
  
 /* Individual item */
 .bm-item {
   display: inline-block;
-  color: red;
 }
  
 /* Styling of overlay */
@@ -68,36 +68,15 @@
   overflow: visible;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.about-container {
-  width: 85%;
-  height: 25%;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-}
-.skills-container {
-  width: 85%;
-  height: 25%;
-  background-color: black;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.skills-icons-container {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  width: 60%;
-  height: 100px;
+  align-items: center;
 }
-.skills-icons {
-  height: 70px;
-  max-width: 25%;
+.about-container {
+  height: 25%;
+  background-color: grey;
+  color: var(--light-blue);
+  display: flex;
+  flex-direction: column;
 }
 .portfolio-container {
   width: 85%;
@@ -106,16 +85,52 @@
   display: flex;
   flex-direction: column;
 }
+.skills-container {
+  height: 45vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: grey;
+  color: var(--light-blue);
+}
+.skills-icons-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 25px 15px;
+  width: 45%;
+  height: 200px;
+  justify-items: center;
+  margin: 0 auto;
+}
+.skills-icons {
+  border: 3px solid white;
+  border-radius: 12px;
+  background-color: white;
+  width: 80px;
+  height: 80px;
+}
+.jest-icon {
+  padding: 0; /* reset */
+  margin: 0;
+
+}
 .contact-container {
-  width: 85vw;
   height: 50vh;
   margin: 0 auto;
-  background-color: black;
-  color: white;
+  background-image: var(--blue-green-blue);
+  color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.contact-inner {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 

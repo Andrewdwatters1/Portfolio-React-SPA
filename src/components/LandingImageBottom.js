@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../images/background1.jpeg';
+import image from '../images/city-blue-2.jpg';
 
 export default function LandingImageTop() {
   return (

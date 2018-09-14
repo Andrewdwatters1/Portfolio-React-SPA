@@ -10,8 +10,8 @@ class About extends Component {
   render() {
     return (
         <div className="about-container">
-          <h1>About Me</h1>
-          <p>asdf asfd afsd adfs fad fdas dfsa dfsa dafs dfas dfsa dfsa dfsa asdf asfd afsd adfs fad fdas dfsa dfsa dafs dfas dfsa dfsa dfsa dasdf asfd afsd adfs fad fdas dfsa dfsa dafs dfas dfsa dfsa dfsa fasdf asfd afsd adfs fad fdas dfsa dfsa dafs dfas dfsa dfsa dfsa sa dfsa dfsa dfsa dfsa dfsa fdsa dfsa fdsa dfsa dfs dfs dfsa dfsa dfsa dfsa dfs fdsa dfsa dfs fdsa adfs a</p>
+          <h1>ABOUT ME</h1>
+          <p>I am an enthusiastic leader with a passion for learning and self-development. I love working with small teams to find innovative and performant solutions to complex problems.  I currently serve in the Colorado Army National Guard as the Operations Officer for a High Mobility Artillery Rocket Systems unit.  In my downtime, I enjoy weightlifting, hiking and camping with my wife Lauren and our pooch, Miso. I'm a lifelong Denver Broncos and Chelsea FC fan, and I enjoy photography and being in nature. </p>
         </div>
     )
   }
