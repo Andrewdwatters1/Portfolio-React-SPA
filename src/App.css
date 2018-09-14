@@ -56,6 +56,25 @@
   background: rgba(0, 0, 0, 0.3);
 }
 
+.nav-container {
+  position: absolute;
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  background-color: green;
+  transition: background-color .5s;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 40px;
+  background-color: blue;
+  transition: background-color .5s;
+}
+
 .primary-content-background {
   min-height: 150vh;
   /* background-image: url('stuff'); */
@@ -72,21 +91,25 @@
   align-items: center;
 }
 .about-container {
-  height: 25%;
+  height: 96vh;
   background-color: grey;
   color: var(--light-blue);
   display: flex;
   flex-direction: column;
 }
 .portfolio-container {
+  height: 300vh; /* this should be (94.8 * numPieces) + (2 * spacingTop), then display flex w/ space-around */
   width: 85%;
-  height: 25%;
-  background-color: white;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+}
+.portfolio-piece-container {
+  height: 84.4vh;
+  background-color: white;
 }
 .skills-container {
-  height: 45vh;
+  height: 65vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -117,7 +140,7 @@
 
 }
 .contact-container {
-  height: 50vh;
+  height: 65vh;
   margin: 0 auto;
   background-image: var(--blue-green-blue);
   color: black;
@@ -131,6 +154,12 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  background-color: grey;
+}
+
+.img {
+  height: 100%;
+  background-size: cover;
 }
 
 

@@ -10,8 +10,18 @@ class Portfolio extends Component {
   render() {
     return (
       <div className="portfolio-container">
-        <h1>Portfolio</h1>
+        <div className="portfolio-piece-container">
+        <h1>Momentum 2.0</h1>
         <p>content goes here content goes here content goes here content goes here content goes here content goes here content goes here content goes here content goes here </p>
+        </div>
+        <div className="portfolio-piece-container">
+        <h1>Group Project</h1>
+        <p>content goes here content goes here content goes here content goes here content goes here content goes here content goes here content goes here content goes here </p>
+        </div>
+        <div className="portfolio-piece-container">
+        <h1>VueJS/Sass Project</h1>
+        <p>content goes here content goes here content goes here content goes here content goes here content goes here content goes here content goes here content goes here </p>
+        </div>
       </div>
     )
   }

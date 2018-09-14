@@ -14,9 +14,21 @@ class Navbar extends Component {
       windowWidth: window.innerWidth
     })
   }
+  handleScroll = (e) => {
+    var navbar = document.getElementById('navbar');
+    var sticky = 30;
+    console.log(sticky);
+    console.log(window.pageYOffset);
+    if(window.pageYOffset >= sticky) {
+      navbar.classList.add('sticky');
+    } else {
+      navbar.classList.remove('sticky');
+    }
+  }
 
   componentDidMount() {
     window.addEventListener("resize", this.handleResize);
+    window.addEventListener('scroll', this.handleScroll);
   }
 
   render() {
@@ -34,7 +46,7 @@ class Navbar extends Component {
               <a className="menu-item" href="/contact">Contact</a>
             </Menu>
             :
-            <div className="nav-container">
+            <div className="nav-container" id="navbar">
               <span className="nav-item">Home and stuff andthings</span>
               <span className="nav-item">About Me</span>
               <span className="nav-item">Portfolio</span>

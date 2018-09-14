@@ -6,7 +6,7 @@ export default function LandingImageTop() {
     <div
       style={{
         backgroundImage: `url(${image}`,
-        minHeight: '90vh',
+        minHeight: '104.8vh',
         backgroundAttachment: 'fixed',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
