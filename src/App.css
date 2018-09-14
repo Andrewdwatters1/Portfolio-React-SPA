@@ -56,6 +56,8 @@
   background: rgba(0, 0, 0, 0.3);
 }
 
+
+
 .nav-container {
   position: absolute;
   width: 100vw;
@@ -63,6 +65,7 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
+  z-index: 2;
   background-color: green;
   transition: background-color .5s;
 }
@@ -74,43 +77,50 @@
   background-color: blue;
   transition: background-color .5s;
 }
-
 .primary-content-background {
-  min-height: 150vh;
+  min-height: 445vh;
   /* background-image: url('stuff'); */
   background-attachment: center;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: red;
+  background-color: red; /* will be background-image */ 
   background-size: cover;
   text-align: center;
   overflow: visible;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  padding: 2vh 0;
 }
 .about-container {
-  height: 96vh;
+  height: 84.4vh;
+  width: 85%;
   background-color: grey;
   color: var(--light-blue);
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+}
+.about-content {
+  max-width: 85%;
+  margin: 0 auto;
 }
 .portfolio-container {
-  height: 300vh; /* this should be (94.8 * numPieces) + (2 * spacingTop), then display flex w/ space-around */
-  width: 85%;
+  height: 274vh;
+  justify-content: space-between;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
 .portfolio-piece-container {
   height: 84.4vh;
+  width: 85%;
+  margin: 0 auto;
   background-color: white;
 }
 .skills-container {
   height: 65vh;
-  width: 100%;
+  width: 85%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -137,7 +147,6 @@
 .jest-icon {
   padding: 0; /* reset */
   margin: 0;
-
 }
 .contact-container {
   height: 65vh;
@@ -150,18 +159,23 @@
   align-items: center;
 }
 .contact-inner {
-  width: 80%;
+  width: 85%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   text-align: center;
   background-color: grey;
 }
-
-.img {
-  height: 100%;
-  background-size: cover;
+.carousel-slider {
+  margin: 0 auto !important;
+  max-height: 50vh;
+  max-width: 85%;
+  align-items: center;
+  z-index: 1;
 }
-
+.thumbs-wrapper {
+  display: none;
+}
 
 
 
