@@ -10,7 +10,7 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className="contact-container">
+      <div className="contact-container" id="contact">
         <div className="contact-inner">
         <h1>CONTACT</h1>
           <p>If you would like to get in touch, please don't hesitate to reach out. You can find my contact information as well as links to my Github and other social media accounts below. </p>

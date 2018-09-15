@@ -9,7 +9,7 @@ class Portfolio extends Component {
   }
   render() {
     return (
-      <div className="portfolio-container">
+      <div className="portfolio-container" id="portfolio">
         <div className="portfolio-piece-container">
           <h1>Momentum 2.0</h1>
           <p>content goes here content goes here content goes here content goes here content goes here content goes here content goes here content goes here content goes here </p>

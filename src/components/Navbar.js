@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { stack as Menu } from 'react-burger-menu';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 class Navbar extends Component {
   constructor() {
@@ -33,25 +34,25 @@ class Navbar extends Component {
 
   render() {
     return (
-      <div>
+      <div id="home">
         {
           this.state.windowWidth < 700
             ?
             <Menu isOpen={this.state.open}>
               {/* customBurgerIcon={ <img src="img/icon.svg" /> } */}
-              <a className="menu-item" href="/">Home</a>
-              <a className="menu-item" href="/about">About Me</a>
-              <a className="menu-item" href="/about">Portfolio</a>
-              <a className="menu-item" href="/about">Skills</a>
-              <a className="menu-item" href="/contact">Contact</a>
+              <a className="menu-item">Home</a>
+              <a className="menu-item" href="#about">About Me</a>
+              <a className="menu-item" href="#portfolio">Portfolio</a>
+              <a className="menu-item" href="#skills">Skills</a>
+              <a className="menu-item" href="#contact">Contact</a>
             </Menu>
             :
             <div className="nav-container" id="navbar">
-              <span className="nav-item">Home and stuff andthings</span>
-              <span className="nav-item">About Me</span>
-              <span className="nav-item">Portfolio</span>
-              <span className="nav-item">Skills</span>
-              <span className="nav-item">Contact</span>
+              <AnchorLink className="nav-item nav-name" href='#home'>Andrew Watters</AnchorLink>
+              <AnchorLink offset='88' className="menu-item" href='#about'>About Me</AnchorLink>
+              <AnchorLink offset='88' className="menu-item" href='#portfolio'>Portfolio</AnchorLink>
+              <AnchorLink offset='85' className="menu-item" href='#skills'>Skills</AnchorLink>
+              <AnchorLink className="menu-item" href='#contact'>Contact</AnchorLink>
             </div>
         }
       </div>

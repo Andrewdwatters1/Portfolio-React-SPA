@@ -56,8 +56,6 @@
   background: rgba(0, 0, 0, 0.3);
 }
 
-
-
 .nav-container {
   position: absolute;
   width: 100vw;
@@ -78,7 +76,7 @@
   transition: background-color .5s;
 }
 .primary-content-background {
-  min-height: 445vh;
+  min-height: 460vh;
   /* background-image: url('stuff'); */
   background-attachment: center;
   background-position: center;
@@ -94,20 +92,32 @@
   padding: 2vh 0;
 }
 .about-container {
-  height: 84.4vh;
+  height: 86vh;
   width: 85%;
   background-color: grey;
   color: var(--light-blue);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  border-radius: 40px;
+  box-shadow:0 0 100px rgba(0,0,0,.6);
 }
 .about-content {
-  max-width: 85%;
-  margin: 0 auto;
+  max-width: 80%;
+  margin: 35px auto;
+  font-size: 1.4em;
+}
+.carousel-slider {
+  margin: 0 auto !important;
+  max-height: 530px; /* max-height: 530px */ 
+  align-items: center;
+  z-index: 1;
+  border-radius: 40px; /* 45 */ 
+  box-shadow:0 0 100px rgba(0,0,0,.6);
+}
+.thumbs-wrapper {
+  display: none;
 }
 .portfolio-container {
   height: 274vh;
+  width: 100%;
   justify-content: space-between;
   display: flex;
   flex-direction: column;
@@ -117,6 +127,8 @@
   width: 85%;
   margin: 0 auto;
   background-color: white;
+  border-radius: 40px;
+  box-shadow:0 0 100px rgba(0,0,0,.6);
 }
 .skills-container {
   height: 65vh;
@@ -126,37 +138,40 @@
   justify-content: space-around;
   background-color: grey;
   color: var(--light-blue);
+  border-radius: 40px;
+  box-shadow:0 0 100px rgba(0,0,0,.6);
 }
 .skills-icons-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-gap: 25px 15px;
-  width: 45%;
-  height: 200px;
+  grid-gap: 25px 10px;
+  width: 60%;
   justify-items: center;
   margin: 0 auto;
 }
-.skills-icons {
-  border: 3px solid white;
-  border-radius: 12px;
-  background-color: white;
-  width: 80px;
-  height: 80px;
+.icon-cont {
+  width: 110px;
+  height: 100px;
+  color: black;
 }
-.jest-icon {
-  padding: 0; /* reset */
-  margin: 0;
+.skills-icons {
+  font-size: 4.5em;
+}
+.skills-icon-text {
+  margin-top: 3px;
 }
 .contact-container {
-  height: 65vh;
+  height: 75vh;
   margin: 0 auto;
-  background-image: var(--blue-green-blue);
-  color: black;
+  /* background-image: var(--blue-green-blue); */
+  /* color: black; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: transparent;
+  margin-top: -75vh;
 }
 .contact-inner {
   width: 85%;
@@ -165,16 +180,8 @@
   flex-direction: column;
   text-align: center;
   background-color: grey;
-}
-.carousel-slider {
-  margin: 0 auto !important;
-  max-height: 50vh;
-  max-width: 85%;
-  align-items: center;
-  z-index: 1;
-}
-.thumbs-wrapper {
-  display: none;
+  border-radius: 40px;
+  box-shadow:0 0 100px rgba(0,0,0,.6);
 }
 
 
