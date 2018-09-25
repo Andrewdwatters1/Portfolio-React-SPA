@@ -63,22 +63,27 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-  z-index: 2;
+  z-index: 3; /**/
   background: linear-gradient(rgba(1, 161, 197, 0.7), transparent);
+  transition: background-color 1.5s;
 }
 .sticky {
   position: fixed;
   top: 0;
   width: 100vw;
   height: 40px;
-  background-color: rgba(1, 161, 197, 0.4);
-  transition: background-color 2s;
+  background-color: rgba(1, 161, 197, 0.7);
+  transition: background-color 1.5s;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 .primary-content-background {
   background-attachment: center;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url('./images_final/background8.jpeg'); /* will be background-image */ 
+  background-image: url('./images_final/background10.jpg'); /* will be background-image */ 
   background-size: cover;
   text-align: center;
   overflow: visible;
@@ -86,23 +91,22 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  z-index: 2;
 }
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+.primary-content-background-2 {
+  background-image: linear-gradient(rgba(1, 161, 197, 0.6), rgba(0, 240, 240, 0.9), rgba(1, 161, 197, 0.6));
 }
 .about-container {
   width: 100%;
-  background-color: grey;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background: linear-gradient(rgba(1, 161, 197, 0.7), transparent);
+  background-color: rgba(255, 255, 255, 0.75);
 }
 .about-content {
-  max-width: 80%;
-  margin: 15px auto;
-  font-size: 1.4em;
+  max-width: 75%;
+  margin: 25px auto;
+  font-size: 1.25em;
 }
 .carousel-slider {
   margin: 0 auto 80px auto !important;
@@ -116,14 +120,14 @@
   display: none;
 }
 .portfolio-container {
-  height: 250vh;
+  /* height: 250vh; */
   width: 100%;
   justify-content: space-around;
   display: flex;
   flex-direction: column;
 }
 .portfolio-piece-container {
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.75);
 }
 .skills-container {
   height: 80vh;
@@ -132,8 +136,8 @@
   flex-direction: column;
   justify-content: space-around;
   color: black;
-  margin-bottom: 50px;
-  background: linear-gradient(transparent, rgba(1, 161, 197, 0.7));
+  margin-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.75);
 }
 .skills-icons-container {
   display: grid;
@@ -157,15 +161,12 @@
 .contact-container {
   height: 70vh;
   margin: 0 auto;
-  /* background-image: var(--blue-green-blue); */
-  /* color: black; */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   background-color: transparent;
   margin-top: -70vh;
-  
 }
 .contact-inner {
   width: 100%;
@@ -173,7 +174,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: grey;
+  background-color: rgba(1, 161, 197, 0.7);
 }
 .contact-form {
   display: flex;

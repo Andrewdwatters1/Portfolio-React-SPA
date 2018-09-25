@@ -7,10 +7,12 @@ import Portfolio from './Portfolio';
 
 function PrimaryContent() {
   return (
-    <div class="primary-content-background">
-      <About />
-      <Portfolio />
-      <Skills />
+    <div className="primary-content-background">
+      <div className="primary-content-background-2">
+        <About />
+        <Portfolio />
+        <Skills />
+      </div>
     </div>
   )
 }
