@@ -28,8 +28,8 @@ class About extends Component {
     return (
       <div className="about-container" id="about">
         <h1>ABOUT ME</h1>
-        <p className="about-content">I am an enthusiastic leader with a passion for learning and self-development. I love working with small teams to find innovative and performant solutions to complex problems.  I currently serve in the Colorado Army National Guard as the Operations Officer for a High Mobility Artillery Rocket Systems unit.  In my downtime, I enjoy weightlifting, hiking and camping with my wife Lauren and our pooch, Miso. I'm a lifelong Denver Broncos and Chelsea FC fan, and I enjoy photography and being in nature. </p>
-        <Carousel showArrows={true} autoPlay showStatus={false} infiniteLoop={true} stopOnHover={true} swipeable={true} transitionTime={550} width={'46%'}>
+        <p className="about-content">I am an enthusiastic leader with a passion for learning and self-development. I love working with small teams to find innovative and performant solutions to complex problems. I currently serve in the Colorado Army National Guard as the Operations Officer for a High Mobility Artillery Rocket Systems unit. In my downtime I enjoy weightlifting, hiking and camping with my wife Lauren and our pooch, Miso. I'm a lifelong Denver Broncos fan, and I love spending time in nature and photography</p>
+        <Carousel showArrows={true} showStatus={false} infiniteLoop={true} stopOnHover={true} swipeable={true} transitionTime={550} width={'46%'}>
           <div>
             <img src={require("../images_final/family.jpg")} />
             <p className="legend" styles={{ fontSize: '18px' }}>My family in Estes, CO</p>

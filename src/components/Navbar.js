@@ -18,13 +18,18 @@ class Navbar extends Component {
   handleScroll = (e) => {
     var navbar = document.getElementById('navbar');
     var sticky = 30;
-    console.log(sticky);
-    console.log(window.pageYOffset);
-    if(window.pageYOffset >= sticky) {
-      navbar.classList.add('sticky');
-    } else {
-      navbar.classList.remove('sticky');
+    if (navbar) {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add('sticky');
+      } else {
+        navbar.classList.remove('sticky');
+      }
     }
+  }
+  closeSidebarMenu = () => {
+    this.setState({
+      open: false
+    })
   }
 
   componentDidMount() {
@@ -39,20 +44,19 @@ class Navbar extends Component {
           this.state.windowWidth < 700
             ?
             <Menu isOpen={this.state.open}>
-              {/* customBurgerIcon={ <img src="img/icon.svg" /> } */}
-              <a className="menu-item">Home</a>
-              <a className="menu-item" href="#about">About Me</a>
-              <a className="menu-item" href="#portfolio">Portfolio</a>
-              <a className="menu-item" href="#skills">Skills</a>
-              <a className="menu-item" href="#contact">Contact</a>
+              <AnchorLink onClick={this.closeSidebarMenu} href='#home'>Andrew Watters</AnchorLink>
+              <AnchorLink onClick={this.closeSidebarMenu} offset='88' href='#about'>About Me</AnchorLink>
+              <AnchorLink onClick={this.closeSidebarMenu} offset='88' href='#portfolio'>Portfolio</AnchorLink>
+              <AnchorLink onClick={this.closeSidebarMenu} offset='85' href='#skills'>Skills</AnchorLink>
+              <AnchorLink onClick={this.closeSidebarMenu} href='#contact'>Contact</AnchorLink>
             </Menu>
             :
             <div className="nav-container" id="navbar">
-              <AnchorLink className="nav-item nav-name" href='#home'>Andrew Watters</AnchorLink>
-              <AnchorLink offset='88' className="menu-item" href='#about'>About Me</AnchorLink>
-              <AnchorLink offset='88' className="menu-item" href='#portfolio'>Portfolio</AnchorLink>
-              <AnchorLink offset='85' className="menu-item" href='#skills'>Skills</AnchorLink>
-              <AnchorLink className="menu-item" href='#contact'>Contact</AnchorLink>
+              <AnchorLink href='#home'>Andrew Watters</AnchorLink>
+              <AnchorLink offset='88' href='#about'>About Me</AnchorLink>
+              <AnchorLink offset='88' href='#portfolio'>Portfolio</AnchorLink>
+              <AnchorLink offset='85' href='#skills'>Skills</AnchorLink>
+              <AnchorLink href='#contact'>Contact</AnchorLink>
             </div>
         }
       </div>

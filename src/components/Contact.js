@@ -12,16 +12,17 @@ class Contact extends Component {
     return (
       <div className="contact-container" id="contact">
         <div className="contact-inner">
-        <h1>CONTACT</h1>
-          <p>If you would like to get in touch, please don't hesitate to reach out. You can find my contact information as well as links to my Github and other social media accounts below. </p>
-          <p>Phone: (719) 431-3749</p>
-          <p>Email: Andrewdwattersdev@gmail.com</p>
-          <form action="https://formspree.io/andrewdwattersdev@gmail.com" method="POST">
-            <input type="text" name="name" placeholder="name"/>
-            <input type="email" name="email" placeholder="email"/>
-            <input type="text" name="message" placeholder="message"/>
-            <input type="submit" value="Send"/>
-            <input type="text" name="_gotcha" style={{display: 'none'}}/>
+          <h1>CONTACT</h1>
+          <p> Whether you're a small business owner, aspiring entrepreneur or the CEO of a fortune 500 tech giant, I'm always excited for the opportunity to help businesses expand their web presence.  Please don't hesitate to reach out!
+          </p>
+          <form action="https://formspree.io/andrewdwattersdev@gmail.com" method="POST" className="contact-form">
+            <div className="contact-form-upper" >
+              <input type="text" name="name" placeholder="name" />
+              <input type="text" name="email" placeholder="email" />
+            </div>
+              <textarea type="text" name="message" placeholder="message" rows="4" cols="50"/>
+            <input type="submit" value="Send" />
+            <input type="text" name="_gotcha" style={{ display: 'none' }} />
           </form>
         </div>
       </div>
