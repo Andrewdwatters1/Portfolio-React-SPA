@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-class Contact extends Component {
-  constructor() {
-    super()
-    this.state = {
-      needs: 'has'
-    }
-  }
+export default class Contact extends Component {
+  // constructor() {
+  //   super()
+  //   this.state = {
+  //     needs: 'has'
+  //   }
+  // }
 
   render() {
     return (
@@ -29,5 +29,3 @@ class Contact extends Component {
     )
   }
 }
-
-export default Contact;

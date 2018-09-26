@@ -4,8 +4,7 @@ import About from './About';
 import Skills from './Skills';
 import Portfolio from './Portfolio';
 
-
-function PrimaryContent() {
+export default function PrimaryContent() {
   return (
     <div className="primary-content-background">
       <div className="primary-content-background-2">
@@ -16,5 +15,3 @@ function PrimaryContent() {
     </div>
   )
 }
-
-export default PrimaryContent;

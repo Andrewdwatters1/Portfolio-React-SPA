@@ -2,14 +2,13 @@ import React, { Component } from 'react';
 import { stack as Menu } from 'react-burger-menu';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
-class Navbar extends Component {
+export default class Navbar extends Component {
   constructor() {
     super()
     this.state = {
       open: false,
     }
   }
-
   handleResize = (e) => {
     this.setState({
       windowWidth: window.innerWidth
@@ -31,12 +30,10 @@ class Navbar extends Component {
       open: false
     })
   }
-
   componentDidMount() {
     window.addEventListener("resize", this.handleResize);
     window.addEventListener('scroll', this.handleScroll);
   }
-
   render() {
     return (
       <div id="home">
@@ -44,24 +41,22 @@ class Navbar extends Component {
           this.state.windowWidth < 700
             ?
             <Menu isOpen={this.state.open}>
-              <AnchorLink onClick={this.closeSidebarMenu} href='#home'>Andrew Watters</AnchorLink>
-              <AnchorLink onClick={this.closeSidebarMenu} offset='88' href='#about'>About Me</AnchorLink>
-              <AnchorLink onClick={this.closeSidebarMenu} offset='88' href='#portfolio'>Portfolio</AnchorLink>
-              <AnchorLink onClick={this.closeSidebarMenu} offset='85' href='#skills'>Skills</AnchorLink>
-              <AnchorLink onClick={this.closeSidebarMenu} href='#contact'>Contact</AnchorLink>
+              <AnchorLink className="nav-link" onClick={this.closeSidebarMenu} href='#home'>Andrew Watters</AnchorLink>
+              <AnchorLink className="nav-link" onClick={this.closeSidebarMenu} offset='39.5' href='#about'>About Me</AnchorLink>
+              <AnchorLink className="nav-link" onClick={this.closeSidebarMenu} offset='88' href='#portfolio'>Portfolio</AnchorLink>
+              <AnchorLink className="nav-link" onClick={this.closeSidebarMenu} offset='35' href='#skills'>Skills</AnchorLink>
+              <AnchorLink className="nav-link" onClick={this.closeSidebarMenu} href='#contact'>Contact</AnchorLink>
             </Menu>
             :
             <div className="nav-container" id="navbar">
-              <AnchorLink href='#home'>Andrew Watters</AnchorLink>
-              <AnchorLink offset='88' href='#about'>About Me</AnchorLink>
-              <AnchorLink offset='88' href='#portfolio'>Portfolio</AnchorLink>
-              <AnchorLink offset='85' href='#skills'>Skills</AnchorLink>
-              <AnchorLink href='#contact'>Contact</AnchorLink>
+              <AnchorLink className="nav-link" href='#home'>Andrew Watters</AnchorLink>
+              <AnchorLink className="nav-link" offset='39.5' href='#about'>About Me</AnchorLink>
+              <AnchorLink className="nav-link" offset='88' href='#portfolio'>Portfolio</AnchorLink>
+              <AnchorLink className="nav-link" offset='35' href='#skills'>Skills</AnchorLink>
+              <AnchorLink className="nav-link" href='#contact'>Contact</AnchorLink>
             </div>
         }
       </div>
     )
   }
 }
-
-export default Navbar;

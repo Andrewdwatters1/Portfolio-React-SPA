@@ -1,8 +1,3 @@
-:root {
-  --light-blue: #0095DB;
-  --blue-green-blue: linear-gradient(#00D1FF, #OOE4FF, #00D1FF)
-}
-
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
@@ -35,27 +30,19 @@
   font-size: 1.15em;
 }
  
-/* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
   fill: #373a47;
 }
- 
-/* Wrapper for item list */
 .bm-item-list {
   color: var(--light-blue);
   padding: 0.8em;
 }
- 
-/* Individual item */
 .bm-item {
   display: inline-block;
 }
- 
-/* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
-
 .nav-container {
   position: absolute;
   width: 100vw;
@@ -64,26 +51,38 @@
   justify-content: space-around;
   align-items: flex-end;
   z-index: 3; /**/
-  background: linear-gradient(rgba(1, 161, 197, 0.7), transparent);
-  transition: background-color 1.5s;
+  background: linear-gradient(rgba(1, 161, 197, 0.8), transparent);
+  transition: background-color 1.1s;
+}
+.nav-link{
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+.nav-link:active {
+  color: white;
+  text-decoration: underline;
 }
 .sticky {
   position: fixed;
   top: 0;
   width: 100vw;
   height: 40px;
-  background-color: rgba(1, 161, 197, 0.7);
-  transition: background-color 1.5s;
+  background-color: rgba(1, 161, 197, 0.8);
+  transition: background-color 1.1s;
 }
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+.landing-name {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color:rgba(255, 255, 255, 0.8);
 }
 .primary-content-background {
   background-attachment: center;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url('./images_final/background10.jpg'); /* will be background-image */ 
+  background-image: url('./images_final/background10.jpg');
   background-size: cover;
   text-align: center;
   overflow: visible;
@@ -94,50 +93,56 @@
   z-index: 2;
 }
 .primary-content-background-2 {
-  background-image: linear-gradient(rgba(1, 161, 197, 0.6), rgba(0, 240, 240, 0.9), rgba(1, 161, 197, 0.6));
+  background-image: linear-gradient(rgba(1, 161, 205, 0.8), rgba(50, 250, 250, 0.8), rgba(1, 161, 205, 0.8));
 }
 .about-container {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: rgba(255, 255, 255, 0.75);
+  padding-top: 50px;
 }
 .about-content {
-  max-width: 75%;
-  margin: 25px auto;
-  font-size: 1.25em;
+  max-width: 85%;
+  margin: 0 auto 25px auto;
+  font-size: 1em;
+  font-weight: bold;
 }
 .carousel-slider {
   margin: 0 auto 80px auto !important;
-  max-height: 530px; /* max-height: 530px */ 
+  max-height: 450px;
+  min-width: 300px;
   align-items: center;
   z-index: 1;
-  border-radius: 40px; /* 45 */ 
-  box-shadow:0 0 100px rgba(0,0,0,0.6);
+  border-radius: 30px;
+  box-shadow:0 0 100px rgba(0,0,0,0.8);
 }
 .thumbs-wrapper {
   display: none;
 }
 .portfolio-container {
-  /* height: 250vh; */
-  width: 100%;
+  width: 90%;
   justify-content: space-around;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
-.portfolio-piece-container {
-  background-color: rgba(255, 255, 255, 0.75);
+.portfolio-piece-container > p {
+  font-size: .85em;
+  font-weight: bold;
+  text-align: left;
+  margin: 5px;
+}
+.momentum-content-right {
+  float: right; /**/
 }
 .skills-container {
-  height: 80vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   color: black;
-  margin-bottom: 0;
-  background-color: rgba(255, 255, 255, 0.75);
+  padding-bottom: 50px;
 }
 .skills-icons-container {
   display: grid;
@@ -174,7 +179,8 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: rgba(1, 161, 197, 0.7);
+  background-color: rgba(1, 161, 197, 0.9);
+  z-index: 3;
 }
 .contact-form {
   display: flex;
@@ -194,14 +200,11 @@
   border-radius: 6px;
   background-color: 
 }
-
-
-
-
-
-
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes codeFade {
+  from { opacity: .4; }
+  to {opacity: .09 }
 }
