@@ -1,6 +1,6 @@
 import React from 'react';
-import image from '../images_final/background7_1.jpg';
-import image2 from '../images_final/code.jpg';
+import image from '../images/background-top.jpg';
+import image2 from '../images/code.jpg';
 
 export default function LandingImageTop() {
   return (
@@ -8,11 +8,12 @@ export default function LandingImageTop() {
       <div
         style={{
           backgroundImage: `url(${image}`,
-          width: '100vw',
-          minHeight: '104.8vh',
+          // width: '110vw',
+          minHeight: '104vh',
           backgroundAttachment: 'fixed',
           backgroundPosition: 'center',
           backgrounsSize: 'cover',
+          // backgroundRepeat: 'no-repeat',
           animation: 'fadeIn 2s',
         }}>
         <div
@@ -22,15 +23,17 @@ export default function LandingImageTop() {
             minHeight: '104.8vh',
             backgroundPosition: 'center',
             backgrounsSize: 'cover',
+            // backgroundRepeat: 'no-repeat',
             animation: 'codeFade 2s',
             zIndex: 2,
-            opacity: .1
+            opacity: .2
           }}>
         </div>
+        <div className="vignette"> </div>
       </div>
       <div className="landing-name">
         <h1>Andrew Watters</h1>
-        <h4>Full Stack Web Developer</h4>
+        <h3>Full Stack Web Developer</h3>
       </div>
     </div>
   )

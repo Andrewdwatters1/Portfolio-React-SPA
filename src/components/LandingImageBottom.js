@@ -1,13 +1,14 @@
 import React from 'react';
-import image from '../images_final/background1.jpeg';
-import image2 from '../images_final/code.jpg';
+import image from '../images/background-bottom.jpeg';
+import image2 from '../images/code.jpg';
 
-export default function LandingImageTop() {
+export default function LandingImageBottom() {
   return (
     <div
       style={{
         backgroundImage: `url(${image}`,
-        height: '140vh',
+        height: '90vh',
+        width: '100vw',
         backgroundAttachment: 'fixed',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -17,12 +18,13 @@ export default function LandingImageTop() {
         style={{
           backgroundImage: `url(${image2}`,
           width: '100vw',
-          minHeight: '140vh',
+          height: '90vh',
           backgroundPosition: 'center',
           backgrounsSize: 'cover',
+          // backgroundRepeat: 'no-repeat',
           animation: 'codeFade 2s',
           zIndex: 2,
-          opacity: .1
+          opacity: .2
         }}>
       </div>
     </div>
