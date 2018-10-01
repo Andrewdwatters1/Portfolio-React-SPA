@@ -46,7 +46,7 @@ export default class Navbar extends Component {
               <AnchorLink className="nav-link" />
               <AnchorLink className="nav-link" offset='39' href='#about'>ABOUT ME</AnchorLink>
               <AnchorLink className="nav-link" offset='39' href='#momentum'>MOMENTUM</AnchorLink>
-              <AnchorLink className="nav-link" offset='39' href='#balance'>BALANCE</AnchorLink>
+              {/* <AnchorLink className="nav-link" offset='39' href='#balance'>BALANCE</AnchorLink> */}
               <AnchorLink className="nav-link" offset='39' href='#skills'>SKILLS</AnchorLink>
               <AnchorLink className="nav-link" offset='-800' href='#contact'>CONTACT</AnchorLink>
             </Menu>
@@ -57,7 +57,7 @@ export default class Navbar extends Component {
               <AnchorLink className="nav-link" />
               <AnchorLink className="nav-link" offset='39' href='#about'>ABOUT ME</AnchorLink>
               <AnchorLink className="nav-link" offset='39' href='#momentum'>MOMENTUM</AnchorLink>
-              <AnchorLink className="nav-link" offset='39' href='#balance'>BALANCE</AnchorLink>
+              {/* <AnchorLink className="nav-link" offset='39' href='#balance'>BALANCE</AnchorLink> */}
               <AnchorLink className="nav-link" offset='39' href='#skills'>SKILLS</AnchorLink>
               <AnchorLink className="nav-link" offset='-800' href='#contact'>CONTACT</AnchorLink>
             </div>
