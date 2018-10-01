@@ -41,19 +41,25 @@ export default class Navbar extends Component {
           this.state.windowWidth < 700
             ?
             <Menu isOpen={this.state.open}>
-              <AnchorLink className="nav-link" onClick={this.closeSidebarMenu} href='#home'>ANDREW WATTERS</AnchorLink>
-              <AnchorLink className="nav-link" onClick={this.closeSidebarMenu} offset='39.5' href='#about'>ABOUT ME</AnchorLink>
-              <AnchorLink className="nav-link" onClick={this.closeSidebarMenu} offset='88' href='#portfolio'>PORTFOLIO</AnchorLink>
-              <AnchorLink className="nav-link" onClick={this.closeSidebarMenu} offset='35' href='#skills'>SKILLS</AnchorLink>
-              <AnchorLink className="nav-link" onClick={this.closeSidebarMenu} href='#contact'>CONTACT</AnchorLink>
+              <AnchorLink className="nav-link" href='#home'>ANDREW WATTERS</AnchorLink>
+              <AnchorLink className="nav-link" />
+              <AnchorLink className="nav-link" />
+              <AnchorLink className="nav-link" offset='39' href='#about'>ABOUT ME</AnchorLink>
+              <AnchorLink className="nav-link" offset='39' href='#momentum'>MOMENTUM</AnchorLink>
+              <AnchorLink className="nav-link" offset='39' href='#balance'>BALANCE</AnchorLink>
+              <AnchorLink className="nav-link" offset='39' href='#skills'>SKILLS</AnchorLink>
+              <AnchorLink className="nav-link" offset='-800' href='#contact'>CONTACT</AnchorLink>
             </Menu>
             :
             <div className="nav-container" id="navbar">
               <AnchorLink className="nav-link" href='#home'>ANDREW WATTERS</AnchorLink>
-              <AnchorLink className="nav-link" offset='39.5' href='#about'>ABOUT ME</AnchorLink>
-              <AnchorLink className="nav-link" offset='88' href='#portfolio'>PORTFOLIO</AnchorLink>
-              <AnchorLink className="nav-link" offset='35' href='#skills'>SKILLS</AnchorLink>
-              <AnchorLink className="nav-link" href='#contact'>CONTACT</AnchorLink>
+              <AnchorLink className="nav-link" />
+              <AnchorLink className="nav-link" />
+              <AnchorLink className="nav-link" offset='39' href='#about'>ABOUT ME</AnchorLink>
+              <AnchorLink className="nav-link" offset='39' href='#momentum'>MOMENTUM</AnchorLink>
+              <AnchorLink className="nav-link" offset='39' href='#balance'>BALANCE</AnchorLink>
+              <AnchorLink className="nav-link" offset='39' href='#skills'>SKILLS</AnchorLink>
+              <AnchorLink className="nav-link" offset='-800' href='#contact'>CONTACT</AnchorLink>
             </div>
         }
       </div>

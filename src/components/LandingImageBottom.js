@@ -21,7 +21,6 @@ export default function LandingImageBottom() {
           height: '90vh',
           backgroundPosition: 'center',
           backgrounsSize: 'cover',
-          // backgroundRepeat: 'no-repeat',
           animation: 'codeFade 2s',
           zIndex: 2,
           opacity: .2

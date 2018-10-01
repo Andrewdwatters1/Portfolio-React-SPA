@@ -20,7 +20,7 @@ export default function LandingImageTop() {
           style={{
             backgroundImage: `url(${image2}`,
             width: '100vw',
-            minHeight: '104.8vh',
+            minHeight: '104vh',
             backgroundPosition: 'center',
             backgrounsSize: 'cover',
             // backgroundRepeat: 'no-repeat',

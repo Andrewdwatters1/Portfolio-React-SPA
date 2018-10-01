@@ -1,12 +1,6 @@
 import React, { Component } from 'react';
 
 export default class Skills extends Component {
-  // constructor() {
-  //   super()
-  //   this.state = {
-  //     needs: 'has'
-  //   }
-  // }
   render() {
     return (
       <div className="skills-container" id="skills">
