@@ -69,7 +69,7 @@ export default class Portfolio extends Component {
 
 
 
-        <div className="about-container" id='balance'>
+        {/* <div className="about-container" id='balance'>
           <h1>BALANCE</h1>
           <div className="about-content-cont">
             <div className="about-content-left-flip">
@@ -117,7 +117,7 @@ export default class Portfolio extends Component {
             <a href="https://momentum2point0.com" target="_blank"><button className="portfolio-buttons">Live Site</button></a>
             <a href="https://github.com/Andrewdwatters1/DevMountain-Group-Project" target="_blank"><button className="portfolio-buttons">View the Code</button></a>
           </div>
-        </div>
+        </div> */}
 
         {/* OTHER PROJECTS GO HERE.  FINISH THE VUEJS/SASS STORE THEN START WORKING ON ARCADE OR OTHER */}
 
@@ -125,7 +125,7 @@ export default class Portfolio extends Component {
           <p className="about-content this-project">Please feel free to review the code for any of my projects on github.  If you feel there's anything I could improve, email me or submit an issue/pull request.  I'm always striving to improve as a developer and would truly appreciate the feedback!</p>
           <div className="portfolio-buttons-container this-project-code">
             <p>This page: <br/>Created with ReactJS</p>
-            <a href="https://github.com/Andrewdwatters1/DevMountain-Group-Project" target="_blank"><button className="portfolio-buttons">View the Code</button></a>
+            <a href="https://github.com/Andrewdwatters1/portfolio-react" target="_blank"><button className="portfolio-buttons">View the Code</button></a>
           </div>
 
         </div>
