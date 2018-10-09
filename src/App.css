@@ -1,6 +1,9 @@
 .App {
   font-family: Georgia, serif;
 }
+.font-size-main {
+  font-size: 1.2em;
+}
 .bm-burger-button {
   position: fixed;
   width: 36px;
@@ -21,7 +24,7 @@
  .bm-menu {
   background: rgb(0, 0, 0, 0.9);
   padding: 2.5em 1.5em 0;
-  font-size: 1.15em;
+  font-size: 1.2em;
 }
 .bm-morph-shape {
   fill: rgba(0, 0, 0, 0.7);
@@ -63,14 +66,39 @@
 .nav-link {
   color: rgba(255, 255, 255, 0.85);
   text-decoration: none;
+  height: 29px;
+  width: 140px;
 }
+.nav-link-dropdown * {
+  color: rgba(255, 255, 255, 0.85) !important;
+  width: 140px !important;
+  background-color: transparent !important;
+  font-size: 1em !important;
+  font-family: Georgia, serif !important;
+  border: none !important;
+  margin-left: -6px !important
+}
+.nav-link-dropdown, .lcLLwD:hover {
+  text-decoration: underline !important;
+  color: white !important;
+}
+.nav-link-dropdown *:hover {
+  cursor: pointer !important;
+}
+.dropdown-sidebar .jKeRtE {
+  margin: -43px 0 0 20vw !important;
+  overflow: visible !important;
+  text-align: right !important;
+}
+
+/* .nav-link-dropdown > p {
+  padding:
+} */
 .nav-link:hover {
   color: white;
   text-decoration: underline;
 }
-.nav-link:active {
-  color: black;
-}
+
 .sticky {
   position: fixed;
   top: 0;
@@ -111,54 +139,53 @@
   width: 90%;
   display: flex;
   flex-direction: column;
-  margin: 80px auto;
+  margin: 50px auto;
   padding: 50px 0;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
   animation: fadeIn 1s;
 }
+.about-container > p, .about-container > h1 {
+  width: 90%;
+  margin: 30px auto;
+}
 .about-content-cont {
-  display: flex;
-}
-.about-content {
-  max-width: 90%;
-  margin: 0 auto 30px auto;
-  font-size: 1.2em;
-}
-.about-content-left {
-  width: 120%;
-  text-align: left;
-  margin: 30px auto 30px 50px;
-}
-.about-content-left-flip {
-  width: 100%;
-}
-.about-content-right-flip {
-  width: 120%;
-  text-align: left;
-  margin: 30px auto 30px 50px;
-}
-.about-content-right {
-  width: 100%;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
 }
 .carousel-slider {
-  margin: 40px auto 0 auto !important;
-  max-height: 500px;
-  min-width: 380px;
-  align-items: center;
-  z-index: 1;
+  margin: 40px auto !important;
+  width: 55% !important;
   border-radius: 10px;
   border: 3px solid white;
 }
+.carousel .slide {
+  padding-bottom: 15px;
+}
 .thumbs-wrapper {
   display: none;
+}
+.carousel-text-left {
+  width: 43%;
+  float: left;
+  margin: 20px auto;
+  text-align: left;
+  padding-right: 10px;
+}
+.carousel-text-right {
+  width: 43%;
+  float: right;
+  margin: 30px auto;
+  text-align: right;
+  padding-left: 10px
 }
 .portfolio-buttons-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 40%;
-  margin: 25px auto;
+  width: 60%;
+  margin: 15px auto;
 }
 .portfolio-buttons {
   height: 50px;
@@ -173,13 +200,8 @@
   cursor: pointer;
 }
 .this-project-container {
-  margin: -80px auto 80px auto;
-  padding-top: 0;
-  font-size: 1em;
-}
-.this-project {
-  font-size: 1.2em;
-  margin-top: 30px;
+  margin: 0 auto 80px auto;
+  padding: 50px auto;
 }
 .this-project-code {
   margin: 0 auto;
@@ -274,7 +296,6 @@
 }
 .contact-input {
   width: 282px;
-  font-size: 1.2em; 
   border: 1px solid black;
   opacity: .7;
 }
@@ -284,7 +305,6 @@
   border: 1px solid white;
 }
 .contact-input-text {
-  font-size: 1.2em;
   opacity: .7;
 }
 .contact-input-text:hover {
@@ -295,7 +315,6 @@
 .contact-submit {
   width: 573px;
   height: 60px; 
-  font-size: 1.2em;
   border: 1px solid black; 
   opacity: .7;
 }

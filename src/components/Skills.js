@@ -16,7 +16,7 @@ export default class Skills extends Component {
           </div>
           <div className="icon-cont">
             <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><i class="fab fa-js skills-icons"></i></a>
-            <p className="skills-icon-text">ES2015 JS</p>
+            <p className="skills-icon-text">ES6 JS</p>
           </div>
           <div className="icon-cont">
             <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank"><i class="fab fa-html5 skills-icons"></i></a>
