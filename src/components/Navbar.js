@@ -8,6 +8,7 @@ export default class Navbar extends Component {
     super()
     this.state = {
       open: false,
+      windowWidth: window.innerWidth
     }
   }
   handleResize = (e) => {

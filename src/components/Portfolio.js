@@ -29,10 +29,10 @@ export default class Portfolio extends Component {
         <div className="about-container" id='momentum'>
           <h1>MOMENTUM 2.0</h1>
           <div className="about-content-cont">
-            <div className="font-size-main carousel-text-right">
+            {window.innerWidth > 420 && <div className="font-size-main carousel-text-right">
               <p>Momentum 2.0 was my take on the popular Momentum Chrome extension. The Full-Stack Application was built with React and NodeJS and features secure 3rd party user Authentication, a basic to-do list feature and a built-in pomodoro.  I also added a "Get-Inspired" section where users can view random image/quote combinations from a collection fetched via the Unsplash API and stored in a Heroku postgreSQL database. </p>
-              <p>I had a great time building the app and enjoyed introduction to learning about numerous different libraries and technologies as I implemented them into the project.  I look forward to improving momentum in the future as I become a more proficient, knowledgeable developer. </p>
-            </div>
+              {window.innerWidth > 575 && <p>I had a great time building the app and enjoyed introduction to learning about numerous different libraries and technologies as I implemented them into the project.  I look forward to improving momentum in the future as I become a more proficient, knowledgeable developer. </p>}
+            </div>}
             <Carousel showArrows={true} showStatus={false} infiniteLoop={true} stopOnHover={true} swipeable={true} transitionTime={550} width={'90%'}>
               <div>
                 <img src={momentum_landing1} />
@@ -78,8 +78,8 @@ export default class Portfolio extends Component {
           <h1>BALANCE</h1>
           <div className="about-content-cont">
             <div className="font-size-main carousel-text-left">
-              <p>After presenting Momentum 2.0 to my peers at DevMountain in 2018, a peer approached me and asked if I'd be willing to re-create and re-factor the project into a more engaging, feature-rich, productivity centric Single Page Application.  The opportunity to lead a 4 person group in developing a more refined, engaging version of a previous project was something I couldn't resist.</p>
-              <p>We started by creating the project with React and NodeJS and integrated numerous 3rd party tools including bcryptJS, node-cron and momentJS.  The lessons I learned throughout the project's evolution have been pivotal to my growth as a developer and I'm excited for the opportunity to build upon them as I work with groups in the future.</p>
+              {window.innerWidth > 420 && <p>After presenting Momentum 2.0 to my peers at DevMountain in 2018, a peer approached me and asked if I'd be willing to re-create and re-factor the project into a more engaging, feature-rich, productivity centric Single Page Application.  The opportunity to lead a 4 person group in developing a more refined, engaging version of a previous project was something I couldn't resist.</p>}
+              {window.innerWidth > 575 && <p>We started by creating the project with React and NodeJS and integrated numerous 3rd party tools including bcryptJS, node-cron and momentJS.  The lessons I learned throughout the project's evolution have been pivotal to my growth as a developer and I'm excited for the opportunity to build upon them as I work with groups in the future.</p>}
             </div>
             <Carousel showArrows={true} showStatus={false} infiniteLoop={true} stopOnHover={true} swipeable={true} transitionTime={550} width={'90%'}>
               <div>
@@ -124,7 +124,7 @@ export default class Portfolio extends Component {
 
         {/* OTHER PROJECTS GO HERE.  FINISH THE VUEJS/SASS STORE THEN START WORKING ON ARCADE OR OTHER */}
         <div className="about-container this-project-container" >
-          <p className="about-content font-size-main">Please feel free to review the code for any of my projects on github.  If you feel there's anything I could improve, email me or submit an issue/pull request.  I'm always striving to improve as a developer and would truly appreciate the feedback! <br/><br/>If you'd like to see the source code for this page, click the link below!</p>
+          <p className="about-content font-size-main">Please feel free to review the code for any of my projects on github.  If you feel there's anything I could improve, email me or submit an issue/pull request.  I'm always striving to improve as a developer and would truly appreciate the feedback! <br /><br />If you'd like to see the source code for this page, click the link below!</p>
           <div className="portfolio-buttons-container this-project-code">
             <a href="https://github.com/Andrewdwatters1/portfolio-react" target="_blank"><button className="portfolio-buttons font-size-main">View the Code</button></a>
           </div>

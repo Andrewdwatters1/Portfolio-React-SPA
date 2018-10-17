@@ -11,10 +11,10 @@ export default class Contact extends Component {
   render() {
     return (
       <div className="contact-container" id="contact">
-        <div>
+        <div className="contact-actual-container">
           <h1 className="contact-title">CONTACT</h1>
           <div className="contact-inner font-size-main">
-            <p> Whether you're a small business owner, aspiring entrepreneur or the CEO of a fortune 500 tech giant, I'm always excited for the opportunity to help businesses expand their web presence.  Please don't hesitate to reach out!
+            <p> Whether you're a small business owner, aspiring entrepreneur or the CTO of a fortune 500 tech giant, I'm always excited for the opportunity to help businesses expand their web presence.  Please don't hesitate to reach out!
           </p>
             <form action="https://formspree.io/andrewdwattersdev@gmail.com" method="POST" className="contact-form" onSubmit={this.thankYou} id="contact-form">
               <div>
