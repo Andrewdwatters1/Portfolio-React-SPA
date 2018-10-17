@@ -312,6 +312,9 @@
   color: white;
   border: 1px solid white;
 }
+.contact-maintain {
+  width: 99%;
+}
 .contact-submit {
   width: 573px;
   height: 60px; 
@@ -350,4 +353,37 @@
 @keyframes codeFade {
   from { opacity: .25; }
   to { opacity: .2; }
+}
+
+@media (max-width: 1000px) {
+  .font-size-main {
+    font-size: 1em;
+  }
+  .carousel-slider {
+    width: 50% !important;
+  }
+  .about-container, .skills-container {
+    width: 100%;
+  }
+  .about-content-cont {
+    width: 95%;
+  }
+}
+@media (max-width: 575px) {
+  .contact-title {
+    width: 115vw;
+  }
+  .contact-inner p {
+    width: 60%;
+  }
+}
+@media (max-width: 440px) {
+  .contact-title {
+    width: 140vw;
+  }
+}
+@media (max-width: 350px) {
+  .contact-title {
+    width: 170vw;
+  }
 }

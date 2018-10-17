@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import { stack as Menu } from 'react-burger-menu';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Select from 'react-styled-select';

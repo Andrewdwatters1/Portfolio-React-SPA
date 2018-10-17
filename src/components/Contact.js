@@ -21,7 +21,7 @@ export default class Contact extends Component {
                 <input type="text" name="name" placeholder="name" className="contact-input font-size-main"/>
                 <input type="text" name="email" placeholder="email" className="contact-input font-size-main" />
               </div >
-              <textarea type="text" name="message" placeholder="message" rows="5" cols="50" className="contact-input-text font-size-main" />
+              <textarea type="text" name="message" placeholder="message" rows="5" cols="50" className="contact-input-text font-size-main contact-maintain"/>
               <input type="submit" value="Send" className="contact-submit font-size-main" />
               <input type="text" name="_gotcha" style={{ display: 'none' }} />
             </form>
