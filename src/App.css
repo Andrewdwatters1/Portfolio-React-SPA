@@ -193,18 +193,26 @@
   font-size: 1.2em;
   background-color: rgba(255, 255, 255, 0.25);
   color: white;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 .portfolio-buttons:hover {
   background-color: rgba(255, 255, 255, 0.4);
   cursor: pointer;
 }
+.this-project-code {
+  margin: 0 auto;
+}
 .this-project-container {
   margin: 0 auto 80px auto;
   padding: 50px auto;
 }
-.this-project-code {
-  margin: 0 auto;
+.this-project-container h3 {
+  margin: 30px auto;
+}
+.gif_player img {
+  width: 200px;
+  margin: 20px auto 5px auto;
+  border-radius: 5px;
 }
 .skills-container {
   width: 90%;
@@ -346,6 +354,7 @@
   opacity: 1;
   transition: font-size .1s;
 }
+
 @keyframes fadeIn {
   from { opacity: 0.001; }
   to   { opacity: 1; }
@@ -427,13 +436,3 @@
     margin-left: 22vw;
   }
 }
-/* @media (max-width: 440px) {
-  .contact-title {
-    width: 140vw;
-  }
-}
-@media (max-width: 350px) {
-  .contact-title {
-    width: 170vw;
-  }
-} */

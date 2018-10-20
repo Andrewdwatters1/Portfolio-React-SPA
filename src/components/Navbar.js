@@ -42,7 +42,15 @@ export default class Navbar extends Component {
   }
   render() {
     console.log(window.innerWidth);
-    const portfolioOptions = [{ label: 'MOMENTUM', value: 'momentum' }, { label: 'BALANCE', value: 'balance' }]
+    const portfolioOptions = [
+      {
+        label: 'MOMENTUM', value: 'momentum'
+      }, {
+        label: 'BALANCE', value: 'balance'
+      }, {
+        label: 'MORE', value: 'more'
+      }
+    ]
     return (
       <div id="home">
         {
@@ -60,6 +68,7 @@ export default class Navbar extends Component {
               <AnchorLink className="nav-link" offset='-800' href='#contact'>CONTACT</AnchorLink>
               <AnchorLink className="nav-link" offset='39' href='#momentum' id="momentum-link" style={{ display: 'none' }}>MOMENTUM</AnchorLink>
               <AnchorLink className="nav-link" offset='39' href='#balance' id="balance-link" style={{ display: 'none' }}>BALANCE</AnchorLink>
+              <AnchorLink className="nav-link" offset='39' href='#more' id="more-link" style={{ display: 'none' }}>MORE</AnchorLink>
             </Menu>
 
             :
@@ -78,6 +87,7 @@ export default class Navbar extends Component {
               <AnchorLink className="nav-link" offset='-800' href='#contact'>CONTACT</AnchorLink>
               <AnchorLink className="nav-link" offset='39' href='#momentum' id="momentum-link" style={{ display: 'none' }}>MOMENTUM</AnchorLink>
               <AnchorLink className="nav-link" offset='39' href='#balance' id="balance-link" style={{ display: 'none' }}>BALANCE</AnchorLink>
+              <AnchorLink className="nav-link" offset='39' href='#more' id="more-link" style={{ display: 'none' }}>MORE</AnchorLink>
             </div>
         }
         <i id="menu-tag" />

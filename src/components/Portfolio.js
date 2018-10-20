@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import GifPlayer from 'react-gif-player';
 
 // MOMENTUM
 const momentum_landing1 = require("../images/momentum/momentum-landing.png");
@@ -122,13 +123,30 @@ export default class Portfolio extends Component {
           </div>
         </div >
 
-        {/* OTHER PROJECTS GO HERE.  FINISH THE VUEJS/SASS STORE THEN START WORKING ON ARCADE OR OTHER */}
-        <div className="about-container this-project-container" >
-          <p className="about-content font-size-main">Please feel free to review the code for any of my projects on github.  If you feel there's anything I could improve, email me or submit an issue/pull request.  I'm always striving to improve as a developer and would truly appreciate the feedback! <br /><br />If you'd like to see the source code for this page, click the link below!</p>
+        {/* OTHER PROJECTS GO HERE. */}
+
+
+        <div className="about-container this-project-container" id="more">
+
+          <h3 classname="about content font-size-main">CODEWARS  |  HACKER-RANK  |  JS-30  |  MORE <br /></h3>
+          <div className="portfolio-buttons-container this-project-code">
+            <a href="https://www.codewars.com/users/Andrewdwatters1" target="_blank"><button className="portfolio-buttons font-size-main">Codewars</button></a>
+            <a href="https://www.hackerrank.com/Andrewdwatters1" target="_blank"><button className="portfolio-buttons font-size-main">Hacker Rank</button></a>
+            {/* <a href="LINK_TO_JS_30_REPO_GITHUB" target="_blank"><button className="portfolio-buttons font-size-main">JavaScript30</button></a> */}
+          </div>
+
+          <br />
+          <hr style={{ width: '90%', margin: '0 auto' }} />
+          <div>
+            <GifPlayer gif='https://art.pixilart.com/13a7766337.gif' autoplay />
+            <p classname="about content font-size-main" style={{ margin: '0 auto 20px auto' }}>Coming soon... The timeless classic, with a twist.</p>
+          </div>
+          <hr style={{ width: '90%', margin: '0 auto' }} />
+
+          <p className="about-content font-size-main">Please feel free to review the code for any of my projects on github.  If you feel there's anything I could improve, email me or submit an issue/PR.  I'm always striving to improve as a developer and would truly appreciate the feedback! <br /><br />If you'd like to see the source code for this page, click the link below!</p>
           <div className="portfolio-buttons-container this-project-code">
             <a href="https://github.com/Andrewdwatters1/portfolio-react" target="_blank"><button className="portfolio-buttons font-size-main">View the Code</button></a>
           </div>
-
         </div >
       </div >
     )
