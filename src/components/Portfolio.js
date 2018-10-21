@@ -132,7 +132,7 @@ export default class Portfolio extends Component {
           <div className="portfolio-buttons-container this-project-code">
             <a href="https://www.codewars.com/users/Andrewdwatters1" target="_blank"><button className="portfolio-buttons font-size-main">Codewars</button></a>
             <a href="https://www.hackerrank.com/Andrewdwatters1" target="_blank"><button className="portfolio-buttons font-size-main">Hacker Rank</button></a>
-            {/* <a href="LINK_TO_JS_30_REPO_GITHUB" target="_blank"><button className="portfolio-buttons font-size-main">JavaScript30</button></a> */}
+            <a href="https://github.com/Andrewdwatters1/JavaScript-30" target="_blank"><button className="portfolio-buttons font-size-main">JavaScript 30</button></a>
           </div>
 
           <br />
