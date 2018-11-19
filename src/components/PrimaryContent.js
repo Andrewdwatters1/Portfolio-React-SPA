@@ -3,6 +3,8 @@ import React from 'react';
 import About from './About';
 import Skills from './Skills';
 import Portfolio from './Portfolio';
+import Contact from './Contact';
+
 
 export default function PrimaryContent() {
   return (
@@ -11,6 +13,7 @@ export default function PrimaryContent() {
         <About />
         <Portfolio />
         <Skills />
+        <Contact/>
       </div>
     </div>
   )

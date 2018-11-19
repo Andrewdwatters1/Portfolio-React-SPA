@@ -8,12 +8,10 @@ export default function LandingImageTop() {
       <div
         style={{
           backgroundImage: `url(${image}`,
-          // width: '110vw',
           minHeight: '104vh',
           backgroundAttachment: 'fixed',
           backgroundPosition: 'center',
           backgrounsSize: 'cover',
-          // backgroundRepeat: 'no-repeat',
           animation: 'fadeIn 2s',
         }}>
         <div
@@ -23,7 +21,6 @@ export default function LandingImageTop() {
             minHeight: '104vh',
             backgroundPosition: 'center',
             backgrounsSize: 'cover',
-            // backgroundRepeat: 'no-repeat',
             animation: 'codeFade 2s',
             zIndex: 2,
             opacity: .2

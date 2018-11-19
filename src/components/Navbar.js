@@ -33,7 +33,8 @@ export default class Navbar extends Component {
     })
   }
   linkTo = (value) => {
-    document.getElementById(`${value}-link`).click();
+    let tgt = document.getElementById(`${value}-link`)
+    if(tgt) tgt.click();
     this.closeSidebarMenu();
   }
   componentDidMount() {
@@ -43,52 +44,44 @@ export default class Navbar extends Component {
   render() {
     console.log(window.innerWidth);
     const portfolioOptions = [
-      {
-        label: 'MOMENTUM', value: 'momentum'
-      }, {
-        label: 'BALANCE', value: 'balance'
-      }, {
-        label: 'MORE', value: 'more'
-      }
+      { label: 'MOMENTUM', value: 'momentum' },
+      { label: 'BALANCE', value: 'balance' },
+      { label: 'MORE', value: 'more' }
     ]
     return (
       <div id="home">
-        {
-          window.innerWidth < 700
-            ?
+        {window.innerWidth < 700 ?
+          <Menu isOpen={this.state.open}>
+            <AnchorLink className="nav-link" onClick={this.linkTo} href='#home' style={{ width: '200px' }}>ANDREW WATTERS</AnchorLink>
+            <AnchorLink className="nav-link" onClick={this.linkTo} offset='39' href='#about'>ABOUT ME</AnchorLink>
+            <Select className="nav-link-dropdown dropdown-sidebar"
+              options={portfolioOptions}
+              onChange={this.linkTo}
+              placeholder={"PORTFOLIO"} />
+            <AnchorLink className="nav-link" onClick={this.linkTo} offset='39' href='#skills'>SKILLS</AnchorLink>
+            <AnchorLink className="nav-link" onClick={this.linkTo} offset='-800' href='#contact'>CONTACT</AnchorLink>
+            <AnchorLink className="nav-link portfolio-nav-link" onClick={this.linkTo} offset='39' href='#momentum' id="momentum-link" style={{ display: 'none' }}>MOMENTUM</AnchorLink>
+            <AnchorLink className="nav-link portfolio-nav-link" onClick={this.linkTo} offset='39' href='#balance' id="balance-link" style={{ display: 'none' }}>BALANCE</AnchorLink>
+            <AnchorLink className="nav-link portfolio-nav-link" onClick={this.linkTo} offset='39' href='#more' id="more-link" style={{ display: 'none' }}>MORE</AnchorLink>
+          </Menu>
 
-            <Menu isOpen={this.state.open}>
-              <AnchorLink className="nav-link" href='#home' style={{ width: '200px' }}>ANDREW WATTERS</AnchorLink>
-              <AnchorLink className="nav-link" offset='39' href='#about'>ABOUT ME</AnchorLink>
-              <Select className="nav-link-dropdown dropdown-sidebar"
-                options={portfolioOptions}
-                onChange={this.linkTo}
-                placeholder={"PORTFOLIO"} />
-              <AnchorLink className="nav-link" offset='39' href='#skills'>SKILLS</AnchorLink>
-              <AnchorLink className="nav-link" offset='-800' href='#contact'>CONTACT</AnchorLink>
-              <AnchorLink className="nav-link" offset='39' href='#momentum' id="momentum-link" style={{ display: 'none' }}>MOMENTUM</AnchorLink>
-              <AnchorLink className="nav-link" offset='39' href='#balance' id="balance-link" style={{ display: 'none' }}>BALANCE</AnchorLink>
-              <AnchorLink className="nav-link" offset='39' href='#more' id="more-link" style={{ display: 'none' }}>MORE</AnchorLink>
-            </Menu>
+          :
 
-            :
-
-            <div className="nav-container" id="navbar">
-              <AnchorLink className="nav-link" href='#home' style={{ width: '200px' }}>ANDREW WATTERS</AnchorLink>
-              <AnchorLink className="nav-link" />
-              <AnchorLink className="nav-link" />
-              <AnchorLink className="nav-link" offset='39' href='#about'>ABOUT ME</AnchorLink>
-              <Select
-                className="nav-link-dropdown"
-                options={portfolioOptions}
-                onChange={this.linkTo}
-                placeholder={"PORTFOLIO"} />
-              <AnchorLink className="nav-link" offset='39' href='#skills'>SKILLS</AnchorLink>
-              <AnchorLink className="nav-link" offset='-800' href='#contact'>CONTACT</AnchorLink>
-              <AnchorLink className="nav-link" offset='39' href='#momentum' id="momentum-link" style={{ display: 'none' }}>MOMENTUM</AnchorLink>
-              <AnchorLink className="nav-link" offset='39' href='#balance' id="balance-link" style={{ display: 'none' }}>BALANCE</AnchorLink>
-              <AnchorLink className="nav-link" offset='39' href='#more' id="more-link" style={{ display: 'none' }}>MORE</AnchorLink>
-            </div>
+          <div className="nav-container" id="navbar">
+            <AnchorLink className="nav-link" href='#home' style={{ width: '200px' }}>ANDREW WATTERS</AnchorLink>
+            <span className="nav-link" />
+            <span className="nav-link" />
+            <AnchorLink className="nav-link" offset='39' href='#about'>ABOUT ME</AnchorLink>
+            <Select
+              className="nav-link-dropdown"
+              options={portfolioOptions}
+              placeholder={"PORTFOLIO"} />
+            <AnchorLink className="nav-link" offset='39' href='#skills'>SKILLS</AnchorLink>
+            <AnchorLink className="nav-link" offset='-800' href='#contact'>CONTACT</AnchorLink>
+            <AnchorLink className="nav-link" offset='39' href='#momentum' id="momentum-link" style={{ display: 'none' }}>MOMENTUM</AnchorLink>
+            <AnchorLink className="nav-link" offset='39' href='#balance' id="balance-link" style={{ display: 'none' }}>BALANCE</AnchorLink>
+            <AnchorLink className="nav-link" offset='39' href='#more' id="more-link" style={{ display: 'none' }}>MORE</AnchorLink>
+          </div>
         }
         <i id="menu-tag" />
       </div>

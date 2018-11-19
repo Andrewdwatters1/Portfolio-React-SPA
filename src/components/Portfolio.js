@@ -3,7 +3,7 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import GifPlayer from 'react-gif-player';
 
-// MOMENTUM
+// MOMENTUM IMAGES
 const momentum_landing1 = require("../images/momentum/momentum-landing.png");
 const momentum_landing2 = require("../images/momentum/momentum-landing-2.png");
 const momentum_login = require("../images/momentum/Momentum-Login.png");
@@ -12,7 +12,7 @@ const momentum_image1 = require("../images/momentum/momentum-images-1.png");
 const momentum_image2 = require("../images/momentum/momentum-images-2.png");
 const momentum_image3 = require("../images/momentum/momentum-images-3.png");
 const momentum_image4 = require("../images/momentum/momentum-image-4.png");
-// BALANCE 
+// BALANCE IMAGES
 const balance_login = require('../images/balance/balance_login.jpg');
 const balance_landing = require('../images/balance/balance_landing.jpg');
 const balance_landing_2 = require('../images/balance/balance_landing_2.jpg');
@@ -36,35 +36,35 @@ export default class Portfolio extends Component {
             </div>}
             <Carousel showArrows={true} showStatus={false} infiniteLoop={true} stopOnHover={true} swipeable={true} transitionTime={550} width={'90%'}>
               <div>
-                <img src={momentum_landing1} />
+                <img src={momentum_landing1} alt="momentum landing page" />
                 <p>Landing page</p>
               </div>
               <div>
-                <img src={momentum_landing2} />
+                <img src={momentum_landing2} alt="momentum landing page alt timezone" />
                 <p>Landing page, alt timezone</p>
               </div>
               <div>
-                <img src={momentum_login} />
+                <img src={momentum_login} alt="momentum login page" />
                 <p>Login page</p>
               </div>
               <div>
-                <img src={momentum_auth} />
+                <img src={momentum_auth} alt="momentum auth0 secured login" />
                 <p>Auth0 secure login</p>
               </div>
               <div>
-                <img src={momentum_image4} />
+                <img src={momentum_image4} alt="momentum image grid" />
                 <p>Image grid: Unsplash API</p>
               </div>
               <div>
-                <img src={momentum_image1} />
+                <img src={momentum_image1} alt="momentum image detail view" />
                 <p>Image detail view</p>
               </div>
               <div>
-                <img src={momentum_image2} />
+                <img src={momentum_image2} alt="momentum image commenting" />
                 <p>Image commenting</p>
               </div>
               <div>
-                <img src={momentum_image3} />
+                <img src={momentum_image3} alt="momentum favoriting and theme toggle" />
                 <p>Favorite and toggle themes</p>
               </div>
             </Carousel>
@@ -84,42 +84,42 @@ export default class Portfolio extends Component {
             </div>
             <Carousel showArrows={true} showStatus={false} infiniteLoop={true} stopOnHover={true} swipeable={true} transitionTime={550} width={'90%'}>
               <div>
-                <img src={balance_landing} />
+                <img src={balance_landing} alt="balance loading" />
                 <p>Desktop landing page with rich UI</p>
               </div>
               <div>
-                <img src={balance_landing_2} />
+                <img src={balance_landing_2} alt="custom themes" />
                 <p>Custom themes and updated weather</p>
               </div>
               <div>
-                <img src={balance_landing_3} />
+                <img src={balance_landing_3} alt="track habits and productivity" />
                 <p>Track habits and productivity</p>
               </div>
               <div>
-                <img src={balance_login} />
+                <img src={balance_login} alt="bcryptjs secured login" />
                 <p>BcryptJS secured user login</p>
               </div>
               <div>
-                <img src={balance_habits} />
+                <img src={balance_habits} alt="habit tracking" />
                 <p>Habit tracking and analytics</p>
               </div>
               <div>
-                <img src={balance_calendar} />
+                <img src={balance_calendar} alt="event management and reminders" />
                 <p>Event management and reminders</p>
               </div>
               <div>
-                <img src={balance_info} />
+                <img src={balance_info} alt="balance info" />
                 <p>Balance Info</p>
               </div>
               <div>
-                <img src={balance_todo} />
+                <img src={balance_todo} alt="scratchpad and nested todos" />
                 <p>Nested To-Do's and scratchpad</p>
               </div>
             </Carousel>
           </div>
           <div className="portfolio-buttons-container">
-            <a href="https://balance.andrewdwattersdev.com" target="_blank"><button className="portfolio-buttons font-size-main">Live Site</button></a>
-            <a href="https://github.com/Andrewdwatters1/DevMountain-Group-Project" target="_blank"><button className="portfolio-buttons font-size-main">View the Code</button></a>
+            <a href="https://balance.andrewdwattersdev.com"><button className="portfolio-buttons font-size-main">Live Site</button></a>
+            <a href="https://github.com/Andrewdwatters1/DevMountain-Group-Project"><button className="portfolio-buttons font-size-main">View the Code</button></a>
           </div>
         </div >
 
@@ -145,7 +145,7 @@ export default class Portfolio extends Component {
 
           <p className="about-content font-size-main">Please feel free to review the code for any of my projects on github.  If you feel there's anything I could improve, email me or submit an issue/PR.  I'm always striving to improve as a developer and would truly appreciate the feedback! <br /><br />If you'd like to see the source code for this page, click the link below!</p>
           <div className="portfolio-buttons-container this-project-code">
-            <a href="https://github.com/Andrewdwatters1/portfolio-react" target="_blank"><button className="portfolio-buttons font-size-main">View the Code</button></a>
+            <a href="https://github.com/Andrewdwatters1/portfolio-react"><button className="portfolio-buttons font-size-main">View the Code</button></a>
           </div>
         </div >
       </div >

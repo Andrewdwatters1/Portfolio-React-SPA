@@ -3,8 +3,6 @@ import React, { Component } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import LandingImageTop from './components/LandingImageTop';
-import LandingImageBottom from './components/LandingImageBottom';
-import Contact from './components/Contact';
 import PrimaryContent from './components/PrimaryContent';
 
 class App extends Component {
@@ -14,8 +12,6 @@ class App extends Component {
         <Navbar />
         <LandingImageTop />
         <PrimaryContent />
-        <LandingImageBottom />
-        <Contact />
       </div>
     );
   }
