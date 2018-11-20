@@ -22,7 +22,7 @@ const balance_calendar = require('../images/balance/balance_calendar.jpg');
 const balance_info = require('../images/balance/balance_info.jpg');
 const balance_todo = require('../images/balance/balance_todo.jpg');
 // OTHER
-const snake = require('../images/snake_gif.gif');
+const snake = require('../images/misc/snake_gif.gif');
 
 export default class Portfolio extends Component {
   render() {

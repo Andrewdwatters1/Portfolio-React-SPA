@@ -34,7 +34,7 @@ export default class About extends Component {
               <p>Wife and I re-united post deployment</p>
             </div>
             <div>
-              <img src={spain} } alt="Honeymoon: Barcelona, Spain" />
+              <img src={spain} alt="Honeymoon: Barcelona, Spain" />
               <p>Much needed vacation: Barcelona, Spain</p>
             </div>
             <div>
