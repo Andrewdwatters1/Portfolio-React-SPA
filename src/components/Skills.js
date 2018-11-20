@@ -7,35 +7,35 @@ export default class Skills extends Component {
         <h1>SKILLS/TECH</h1>
         <div class="skills-icons-container">
           <div className="icon-cont">
-            <a href="https://reactjs.org/" target="_blank"><i class="fab fa-react skills-icons"></i></a>
+            <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer"><i class="fab fa-react skills-icons"></i></a>
             <p className="skills-icon-text">reactJS</p>
           </div>
           <div className="icon-cont">
-            <a href="https://nodejs.org/en/" target="_blank"><i class="fab fa-node-js skills-icons"></i></a>
+            <a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer"><i class="fab fa-node-js skills-icons"></i></a>
             <p className="skills-icon-text">nodeJS</p>
           </div>
           <div className="icon-cont">
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><i class="fab fa-js skills-icons"></i></a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer"><i class="fab fa-js skills-icons"></i></a>
             <p className="skills-icon-text">ES6 JS</p>
           </div>
           <div className="icon-cont">
-            <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank"><i class="fab fa-html5 skills-icons"></i></a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank" rel="noopener noreferrer"><i class="fab fa-html5 skills-icons"></i></a>
             <p className="skills-icon-text">HTML5</p>
           </div>
           <div className="icon-cont">
-            <a href="https://github.com/" target="_blank"><i class="fab fa-github skills-icons"></i></a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github skills-icons"></i></a>
             <p className="skills-icon-text">Github</p>
           </div>
           <div className="icon-cont">
-            <a href="https://vuejs.org/" target="_blank"><i class="fab fa-vuejs skills-icons"></i></a>
+            <a href="https://vuejs.org/" target="_blank" rel="noopener noreferrer"><i class="fab fa-vuejs skills-icons"></i></a>
             <p className="skills-icon-text">vueJS</p>
           </div>
           <div className="icon-cont">
-            <a href="https://sass-lang.com/" target="_blank"><i class="fab fa-sass skills-icons"></i></a>
+            <a href="https://sass-lang.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-sass skills-icons"></i></a>
             <p className="skills-icon-text">Sass</p>
           </div>
           <div className="icon-cont">
-            <a href="https://www.digitalocean.com/" target="_blank"><i class="fab fa-digital-ocean skills-icons"></i></a>
+            <a href="https://www.digitalocean.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-digital-ocean skills-icons"></i></a>
             <p className="skills-icon-text">Digital Ocean</p>
           </div>
           <div className="icon-cont">

@@ -75,6 +75,7 @@ export default class Navbar extends Component {
             <Select
               className="nav-link-dropdown"
               options={portfolioOptions}
+              onChange={this.linkTo}
               placeholder={"PORTFOLIO"} />
             <AnchorLink className="nav-link" offset='39' href='#skills'>SKILLS</AnchorLink>
             <AnchorLink className="nav-link" offset='-800' href='#contact'>CONTACT</AnchorLink>

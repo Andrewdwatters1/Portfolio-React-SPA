@@ -52,15 +52,15 @@ export default class Portfolio extends Component {
                 <p>Auth0 secure login</p>
               </div>
               <div>
-                <img src={momentum_image4} alt="momentum image grid" />
+                <img src={momentum_image4} alt="photo grid" />
                 <p>Image grid: Unsplash API</p>
               </div>
               <div>
-                <img src={momentum_image1} alt="momentum image detail view" />
+                <img src={momentum_image1} alt="momentum photo detail view" />
                 <p>Image detail view</p>
               </div>
               <div>
-                <img src={momentum_image2} alt="momentum image commenting" />
+                <img src={momentum_image2} alt="momentum photo commenting" />
                 <p>Image commenting</p>
               </div>
               <div>
@@ -70,7 +70,7 @@ export default class Portfolio extends Component {
             </Carousel>
           </div>
           <div className="portfolio-buttons-container">
-            <a href="https://momentum.andrewdwattersdev.com" target="_blank"><button className="portfolio-buttons font-size-main">Live Site</button></a>
+            <a href="https://momentum.andrewdwattersdev.com" target="_blank" rel="noopener noreferrer"><button className="portfolio-buttons font-size-main">Live Site</button></a>
             <a href="https://github.com/Andrewdwatters1/Momentum-2.0" target="_blank"><button className="portfolio-buttons font-size-main">View the Code</button></a>
           </div>
         </div>
@@ -130,9 +130,9 @@ export default class Portfolio extends Component {
 
           <h3 classname="about content font-size-main">CODEWARS  |  HACKER-RANK  |  JS-30  |  MORE <br /></h3>
           <div className="portfolio-buttons-container this-project-code">
-            <a href="https://www.codewars.com/users/Andrewdwatters1" target="_blank"><button className="portfolio-buttons font-size-main">Codewars</button></a>
-            <a href="https://www.hackerrank.com/Andrewdwatters1" target="_blank"><button className="portfolio-buttons font-size-main">Hacker Rank</button></a>
-            <a href="https://github.com/Andrewdwatters1/JavaScript-30" target="_blank"><button className="portfolio-buttons font-size-main">JavaScript 30</button></a>
+            <a href="https://www.codewars.com/users/Andrewdwatters1" target="_blank" rel="noopener noreferrer"><button className="portfolio-buttons font-size-main">Codewars</button></a>
+            <a href="https://www.hackerrank.com/Andrewdwatters1" target="_blank" rel="noopener noreferrer"><button className="portfolio-buttons font-size-main">Hacker Rank</button></a>
+            <a href="https://github.com/Andrewdwatters1/JavaScript-30" target="_blank" rel="noopener noreferrer"><button className="portfolio-buttons font-size-main">JavaScript 30</button></a>
           </div>
 
           <br />
