@@ -42,7 +42,6 @@ export default class Navbar extends Component {
     window.addEventListener('scroll', this.handleScroll);
   }
   render() {
-    console.log(window.innerWidth);
     const portfolioOptions = [
       { label: 'MOMENTUM', value: 'momentum' },
       { label: 'BALANCE', value: 'balance' },

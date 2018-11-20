@@ -21,7 +21,8 @@ const balance_habits = require('../images/balance/balance_habits.jpg');
 const balance_calendar = require('../images/balance/balance_calendar.jpg');
 const balance_info = require('../images/balance/balance_info.jpg');
 const balance_todo = require('../images/balance/balance_todo.jpg');
-
+// OTHER
+const snake = require('../images/snake_gif.gif');
 
 export default class Portfolio extends Component {
   render() {
@@ -52,15 +53,15 @@ export default class Portfolio extends Component {
                 <p>Auth0 secure login</p>
               </div>
               <div>
-                <img src={momentum_image4} alt="photo grid" />
+                <img src={momentum_image4} alt="photos grid" />
                 <p>Image grid: Unsplash API</p>
               </div>
               <div>
-                <img src={momentum_image1} alt="momentum photo detail view" />
+                <img src={momentum_image1} alt="momentum photos detail view" />
                 <p>Image detail view</p>
               </div>
               <div>
-                <img src={momentum_image2} alt="momentum photo commenting" />
+                <img src={momentum_image2} alt="momentum photos commenting" />
                 <p>Image commenting</p>
               </div>
               <div>
@@ -71,7 +72,7 @@ export default class Portfolio extends Component {
           </div>
           <div className="portfolio-buttons-container">
             <a href="https://momentum.andrewdwattersdev.com" target="_blank" rel="noopener noreferrer"><button className="portfolio-buttons font-size-main">Live Site</button></a>
-            <a href="https://github.com/Andrewdwatters1/Momentum-2.0" target="_blank"><button className="portfolio-buttons font-size-main">View the Code</button></a>
+            <a href="https://github.com/Andrewdwatters1/Momentum-2.0" target="_blank" rel="noopener noreferrer"><button className="portfolio-buttons font-size-main">View the Code</button></a>
           </div>
         </div>
 
@@ -128,7 +129,7 @@ export default class Portfolio extends Component {
 
         <div className="about-container this-project-container" id="more">
 
-          <h3 classname="about content font-size-main">CODEWARS  |  HACKER-RANK  |  JS-30  |  MORE <br /></h3>
+          <h3 className="about content font-size-main">CODEWARS  |  HACKER-RANK  |  JS-30  |  MORE <br /></h3>
           <div className="portfolio-buttons-container this-project-code">
             <a href="https://www.codewars.com/users/Andrewdwatters1" target="_blank" rel="noopener noreferrer"><button className="portfolio-buttons font-size-main">Codewars</button></a>
             <a href="https://www.hackerrank.com/Andrewdwatters1" target="_blank" rel="noopener noreferrer"><button className="portfolio-buttons font-size-main">Hacker Rank</button></a>
@@ -138,8 +139,8 @@ export default class Portfolio extends Component {
           <br />
           <hr style={{ width: '90%', margin: '0 auto' }} />
           <div>
-            <GifPlayer gif='https://art.pixilart.com/13a7766337.gif' autoplay />
-            <p classname="about content font-size-main" style={{ margin: '0 auto 20px auto' }}>Coming soon... The timeless classic, with a twist.</p>
+            <GifPlayer gif={snake} autoplay />
+            <p className="about content font-size-main" style={{ margin: '0 auto 20px auto' }}>Coming soon... The timeless classic, with a twist.</p>
           </div>
           <hr style={{ width: '90%', margin: '0 auto' }} />
 
