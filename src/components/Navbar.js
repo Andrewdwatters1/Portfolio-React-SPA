@@ -34,8 +34,10 @@ export default class Navbar extends Component {
   }
   linkTo = (value) => {
     let tgt = document.getElementById(`${value}-link`)
-    if(tgt) tgt.click();
-    this.closeSidebarMenu();
+    if (tgt) {
+      tgt.click();
+    }
+      this.closeSidebarMenu();
   }
   componentDidMount() {
     window.addEventListener("resize", this.handleResize);
