@@ -36,8 +36,8 @@ export default class Navbar extends Component {
     let tgt = document.getElementById(`${value}-link`)
     if (tgt) {
       tgt.click();
-    }
       this.closeSidebarMenu();
+    }
   }
   componentDidMount() {
     window.addEventListener("resize", this.handleResize);
@@ -59,11 +59,11 @@ export default class Navbar extends Component {
               options={portfolioOptions}
               onChange={this.linkTo}
               placeholder={"PORTFOLIO"} />
-            <AnchorLink className="nav-link" onClick={this.linkTo} offset='39' href='#skills'>SKILLS</AnchorLink>
-            <AnchorLink className="nav-link" onClick={this.linkTo} offset='-800' href='#contact'>CONTACT</AnchorLink>
             <AnchorLink className="nav-link portfolio-nav-link" onClick={this.linkTo} offset='39' href='#momentum' id="momentum-link" style={{ display: 'none' }}>MOMENTUM</AnchorLink>
             <AnchorLink className="nav-link portfolio-nav-link" onClick={this.linkTo} offset='39' href='#balance' id="balance-link" style={{ display: 'none' }}>BALANCE</AnchorLink>
             <AnchorLink className="nav-link portfolio-nav-link" onClick={this.linkTo} offset='39' href='#more' id="more-link" style={{ display: 'none' }}>MORE</AnchorLink>
+            <AnchorLink className="nav-link" onClick={this.linkTo} offset='39' href='#skills'>SKILLS</AnchorLink>
+            <AnchorLink className="nav-link" onClick={this.linkTo} offset='-800' href='#contact'>CONTACT</AnchorLink>
           </Menu>
 
           :
